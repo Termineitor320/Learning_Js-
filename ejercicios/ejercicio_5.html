@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <p id="idTexto">Este es un texto de ejemplo.</p>
+    <select id="idNegrita" onchange="cambiarEstilo()">
+        <option value="normal">Normal</option>
+        <option value="bold">Negrita</option>
+    </select>
+    <select id="idCursiva" onchange="cambiarEstilo()">
+        <option value="normal">Normal</option>
+        <option value="italic">Cursiva</option>
+    </select>
+    <script>
+        function cambiarEstilo() {
+            var negrita = document.getElementById("idNegrita").value;
+            var cursiva = document.getElementById("idCursiva").value;
+            var texto = document.getElementById("idTexto");
+            texto.style.fontWeight = negrita;
+            texto.style.fontStyle = cursiva;
+        }
+    </script>
+
+
+</body>
+</html>

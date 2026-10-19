@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <input type="text" id="idTexto" placeholder="Ingrese un texto">
+    <button onclick="mostrarTexto()">Mostrar Texto</button>
+    <div id="idCapa"></div>
+
+    <script>
+        function mostrarTexto() {
+            var texto = document.getElementById("idTexto").value;
+            document.getElementById("idCapa").innerHTML = texto;
+        }
+    </script>
+
+</body>
+</html>
